@@ -1,0 +1,30 @@
+{
+  "name": "fluxible-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwmckenna/fluxible-hooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwmckenna/fluxible-hooks/issues"
+  },
+  "homepage": "https://github.com/pwmckenna/fluxible-hooks#readme",
+  "dependencies": {
+    "fluxible-context": "^1.0.0",
+    "react": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
