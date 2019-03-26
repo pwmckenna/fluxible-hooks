@@ -1,9 +1,11 @@
 const React = require('react');
-const FluxibleContext = require('fluxible-context');
+const useContext = require('./use-context');
 
 module.exports = function useStores(stores, getStateFromStores) {
-  const context = React.useContext(FluxibleContext);
-  const [state, setState] = React.useState(getStateFromStores(context));
+  const context = useContext();
+  const s = React.useState(getStateFromStores(context));
+  const state = s[0];
+  const setState = s[1];
   function onChange() {
     setState(getStateFromStores(context));
   }
