@@ -10,16 +10,16 @@ module.exports = function useStores(stores, getStateFromStores) {
     setState(getStateFromStores(context));
   }
   function subscribe() {
-    stores.forEach((Store) => {
+    stores.forEach(function(Store) {
       context.getStore(Store).on('change', onChange);
     });
   }
   function unsubscribe() {
-    stores.forEach((Store) => {
+    stores.forEach(function(Store) {
       context.getStore(Store).removeListener('change', onChange);
     });
   }
-  React.useEffect(() => {
+  React.useEffect(function () {
     subscribe();
     return unsubscribe;
   });
