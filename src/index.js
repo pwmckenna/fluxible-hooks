@@ -1,2 +1,7 @@
-export useContext from './use-context';
-export useStores from './use-stores';
+import useContext from './use-context';
+import useStores from './use-stores';
+
+export {
+  useContext,
+  useStores,
+};
