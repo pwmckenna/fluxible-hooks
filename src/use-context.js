@@ -1,6 +1,4 @@
-const React = require('react');
-const FluxibleContext = require('fluxible-context');
+import { useContext } from 'react';
+import FluxibleContext from 'fluxible-context';
 
-module.exports = function useContext() {
-  return React.useContext(FluxibleContext);
-};
+export default () => useContext(FluxibleContext);

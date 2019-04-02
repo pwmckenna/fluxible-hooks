@@ -2,7 +2,7 @@
   "name": "fluxible-hooks",
   "version": "1.0.3",
   "description": "",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src",
     "prepublishOnly": "babel src --out-dir lib --source-maps --env-name=production"
